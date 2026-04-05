@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اليمن للسياحة والسفر | رحلتك بأمان</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header & Nav -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-plane-departure" style="color: var(--secondary-color);"></i>
+                اليمن <span>للسفر</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#services">خدماتنا</a></li>
+                <li><a href="#trust">آراء العملاء</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" style="background-image: url('file:///C:/Users/USER/.gemini/antigravity/brain/b935682b-5edb-407b-a011-8b6b38319432/yemen_travel_hero_1775428494818.png');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>احجز رحلتك بسهولة وأمان</h1>
+            <p>أفضل أسعار تذاكر الطيران وخدمات السفر في اليمن</p>
+            
+            <!-- Booking UI -->
+            <div class="booking-form">
+                <form id="bookingForm">
+                    <div class="booking-grid">
+                        <div class="form-group">
+                            <label for="destination"><i class="fas fa-map-marker-alt" style="margin-left: 5px; color: var(--secondary-color);"></i> وجهة السفر</label>
+                            <select id="destination" required>
+                                <option value="" disabled selected>اختر الوجهة...</option>
+                                <option value="cairo">القاهرة</option>
+                                <option value="amman">عّمان</option>
+                                <option value="jeddah">جدة</option>
+                                <option value="riyadh">الرياض</option>
+                                <option value="mumbai">مومباي</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date"><i class="fas fa-calendar-alt" style="margin-left: 5px; color: var(--secondary-color);"></i> تاريخ الرحلة</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="passengers"><i class="fas fa-users" style="margin-left: 5px; color: var(--secondary-color);"></i> عدد المسافرين</label>
+                            <input type="number" id="passengers" min="1" max="10" value="1" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-search">
+                                بحث
+                                <i class="fas fa-arrow-left" style="margin-right: 5px;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <h2 class="section-title">خدماتنا</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-ticket-alt service-icon"></i>
+                <h3>حجز تذاكر طيران</h3>
+                <p>أفضل الأسعار على جميع الخطوط الجوية من وإلى اليمن بكل سهولة وراحة.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-kaaba service-icon"></i>
+                <h3>حج وعمرة</h3>
+                <p>برامج متكاملة لرحلات الحج والعمرة تشمل الإقامة والمواصلات بأعلى مستويات الخدمة.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-passport service-icon"></i>
+                <h3>استخراج تأشيرات</h3>
+                <p>تسهيل إجراءات استخراج التأشيرات السياحية والعلاجية للعديد من الدول.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-umbrella-beach service-icon"></i>
+                <h3>عروض سياحية</h3>
+                <p>باقات سياحية متميزة ومخصصة تناسب جميع الميزانيات لوجهات عالمية.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section" id="trust">
+        <div class="trust-stats">
+            <div class="stat-item">
+                <h4>+5000</h4>
+                <p>عميل سعيد</p>
+            </div>
+            <div class="stat-item">
+                <h4>+15</h4>
+                <p>سنوات خبرة</p>
+            </div>
+            <div class="stat-item">
+                <h4>24/7</h4>
+                <p>خدمة عملاء</p>
+            </div>
+        </div>
+        
+        <h3 style="margin-bottom: 2.5rem; font-size: 2.2rem; color: #fff; font-weight: 800;">ماذا يقول عملاؤنا</h3>
+        <div class="testimonials">
+            <div class="testimonial-card">
+                <i class="fas fa-quote-right"></i>
+                <p class="testimonial-text">"تعامل راقي ومصداقية عالية في الحجوزات. أنصح الجميع بالتعامل معهم لسرعة الإنجاز والأسعار المناسبة. رحلتي للقاهرة كانت ميسرة جداً."</p>
+                <div class="testimonial-author">- أحمد الشامي</div>
+            </div>
+            <div class="testimonial-card">
+                <i class="fas fa-quote-right"></i>
+                <p class="testimonial-text">"خدمة استخراج التأشيرات كانت سريعة جداً. شكراً لفريق العمل على احترافيتهم وحسن تعاونهم، تجربة ممتازة وتستحق التقييم."</p>
+                <div class="testimonial-author">- فاطمة محمد</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p style="margin-bottom: 1rem; font-size: 1.1rem;">&copy; 2026 اليمن للسياحة والسفر. جميع الحقوق محفوظة.</p>
+        <div style="font-size: 1.5rem; display: flex; justify-content: center; gap: 1.5rem;">
+            <i class="fab fa-facebook" style="cursor:pointer; color:#ccc; transition:0.3s;" onmouseover="this.style.color='var(--secondary-color)'" onmouseout="this.style.color='#ccc'"></i>
+            <i class="fab fa-twitter" style="cursor:pointer; color:#ccc; transition:0.3s;" onmouseover="this.style.color='var(--secondary-color)'" onmouseout="this.style.color='#ccc'"></i>
+            <i class="fab fa-instagram" style="cursor:pointer; color:#ccc; transition:0.3s;" onmouseover="this.style.color='var(--secondary-color)'" onmouseout="this.style.color='#ccc'"></i>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/967700000000" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+        <span>تواصل معنا مباشرة</span>
+    </a>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
